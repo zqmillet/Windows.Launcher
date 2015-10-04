@@ -1,0 +1,10 @@
+D:\iProject\WindowsLauncher\WindowsLauncher\obj\Debug\WindowsLauncher.vbprojResolveAssemblyReference.cache
+D:\iProject\WindowsLauncher\WindowsLauncher\obj\Debug\WindowsLauncher.FormMain.resources
+D:\iProject\WindowsLauncher\WindowsLauncher\obj\Debug\WindowsLauncher.Resources.resources
+D:\iProject\WindowsLauncher\WindowsLauncher\obj\Debug\WindowsLauncher.vbproj.GenerateResource.Cache
+D:\iProject\WindowsLauncher\WindowsLauncher\obj\Debug\WindowsLauncher.xml
+D:\iProject\WindowsLauncher\WindowsLauncher\bin\Debug\WindowsLauncher.exe
+D:\iProject\WindowsLauncher\WindowsLauncher\bin\Debug\WindowsLauncher.pdb
+D:\iProject\WindowsLauncher\WindowsLauncher\bin\Debug\WindowsLauncher.xml
+D:\iProject\WindowsLauncher\WindowsLauncher\obj\Debug\WindowsLauncher.exe
+D:\iProject\WindowsLauncher\WindowsLauncher\obj\Debug\WindowsLauncher.pdb
