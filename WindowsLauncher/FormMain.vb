@@ -1,5 +1,7 @@
 ﻿Public Class FormMain
-    Private Const FormWidth = 300
+    Private Const FormWidth = 600
+    Private Const FormHeight = 400
+
 
     Private TableLayoutPanel As New TableLayoutPanel
     Private LabelName As New Label
@@ -15,7 +17,7 @@
     Private ButtonOption As New Button
     Private ButtonAdd As New Button
 
-    Private ListView As New ListView
+    Private TaskListView As TaskListView
 
     Public Sub New()
 
@@ -61,8 +63,9 @@
             .Controls.Add(ButtonOption, 2, 4)
             .Controls.Add(ButtonAdd, 3, 4)
 
-            .SetColumnSpan(ListView, 4)
-            .Controls.Add(ListView, 0, 5)
+            TaskListView = New TaskListView(Application.StartupPath & "\WindowsLauncher.cfg")
+            .SetColumnSpan(TaskListView, 4)
+            .Controls.Add(TaskListView, 0, 5)
         End With
 
         With LabelName
@@ -127,33 +130,14 @@
             .Dock = DockStyle.Fill
         End With
 
-        InitialListView()
-
         With Me
             .Text = "Windows Launcher"
-            .Size = New Size(FormWidth, .Height)
+            .Size = New Size(FormWidth, FormHeight)
             .MaximizeBox = False
             .MinimumSize = .Size
-            ' .FormBorderStyle = FormBorderStyle.FixedSingle
             .Icon = New Icon(Application.StartupPath & "\icon\MainIcon.ico")
             .Controls.Add(TableLayoutPanel)
         End With
     End Sub
-
-    Private Sub InitialListView()
-        With ListView
-            .Margin = New Padding(1)
-            .Dock = DockStyle.Fill
-            .View = View.Details
-            .GridLines = True
-
-            .Columns.Add("序号")
-            .Columns.Add("名称")
-            .Columns.Add("路径")
-            .Columns.Add("参数")
-            .Columns.Add("条件")
-        End With
-    End Sub
-
 
 End Class

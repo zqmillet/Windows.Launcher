@@ -27,6 +27,6 @@ Public Class Task
     End Sub
 
     Public Function GetConfigCode() As String
-
+        Return ""
     End Function
 End Class
